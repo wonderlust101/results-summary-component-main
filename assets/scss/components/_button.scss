@@ -1,0 +1,11 @@
+.button {
+  border: none;
+  padding: 1.25rem;
+  border-radius: 50rem;
+  color: var(--clr-neutral-colors-pale-blue);
+  background-color: var(--clr-neutral-colors-dark-gray-blue);
+
+  &:hover {
+    background: linear-gradient(180deg, var(--clr-gradient-colors-background-1) 0%, var(--clr-gradient-colors-background-2) 100%);
+  }
+}

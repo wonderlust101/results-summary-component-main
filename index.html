@@ -5,30 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--     <meta name="title" content="title"> -->
-    <!--     <meta name="keywords" content="keyword"> -->
     <!--     <meta name="description" content="description"> -->
 
-    <title>Document</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 <body>
-    <div style="display: grid; height: 100vh;">
-        <div style="width: 100%; background-color:var(--clr-primary-color-star-dust); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-election-night)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-crackled); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-fading-horizon)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-neon-spring); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-iris-royale)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-iris-royale); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-neon-spring)">Neon Genesis Evangelion</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-fading-horizon); display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-crackled)">新世紀エヴァンゲリオン</h1></div>
-        <div style="width: 100%; background-color:var(--clr-primary-color-election-night);display: flex; align-items: center; justify-content: center;
-        flex-direction: column"><h1 style="color: var(--clr-primary-color-star-dust)">Neon Genesis Evangelion</h1></div>
-    </div>
+    <main class="results">
+        <section class="results__header-grid">
+            <div class="results__summary-results">
+                <h2 class="results__summary-header">Your Result</h2>
+                <div class="results__summary-grade">
+                    <p class="results__summary-mark">76</p>
+                    <p class="results__summary-out-of">of 100</p>
+                </div>
+            </div>
 
+            <div class="results__message">
+                <h2 class="results__message-header">Great</h2>
+                <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+        </section>
+
+        <section class="results__grade-grid">
+            <h2>Summary</h2>
+
+            <ul class="results__grade-list">
+                <li class="results__reaction">
+                    <div class="results__category-name">
+                        <img src="assets/images/icon-reaction.svg" alt="">
+                        <h3>Reaction</h3>
+                    </div>
+                    <p class="results__category-grade"><span class="results__category-grade-value"></span> / 100</p>
+                </li>
+                <li class="results__memory">
+                    <div class="results__category-name">
+                        <img src="assets/images/icon-memory.svg" alt="">
+                        <h3>Memory</h3>
+                    </div>
+                    <p class="results__category-grade"><span class="results__category-grade-value"></span> / 100</p>
+                </li>
+                <li class="results__verbal">
+                    <div class="results__category-name">
+                        <img src="assets/images/icon-verbal.svg" alt="">
+                        <h3>Verbal</h3>
+                    </div>
+                    <p class="results__category-grade"><span class="results__category-grade-value"></span> / 100</p>
+                </li>
+                <li class="results__visual">
+                    <div class="results__category-name">
+                        <img src="assets/images/icon-visual.svg" alt="">
+                        <h3>Visual</h3>
+                    </div>
+                    <p class="results__category-grade"><span class="results__category-grade-value"></span> /100</p>
+                </li>
+            </ul>
+
+            <button class="button">Continue</button>
+        </section>
+    </main>
     <script src="assets/scripts/index.js"></script>
 </body>
 </html>

@@ -2,35 +2,31 @@
 $colors: (
   // Main Colors
         primary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+                'light-red': hsl(0, 100%, 67%),
+                'light-red-transparent': hsla(0, 100%, 67%, 0.05),
+                'orangey-yellow': hsl(39, 100%, 56%),
+                'orangey-yellow-transparent': hsla(39, 100%, 56%, 0.05),
+                'green-teal': hsl(166, 100%, 37%),
+                'green-teal-transparent': hsla(166, 100%, 37%, 0.05),
+                'cobalt-blue': hsl(234, 85%, 45%),
+                'cobalt-blue-transparent': hsla(234, 85%, 45%, 0.05),
         ),
-  // Secondary Colors
-        secondary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+        gradient-colors: (
+                'background-1': hsl(252, 100%, 67%),
+                'background-2': hsl(241, 81%, 54%),
+
+                'circle-1': hsla(256, 72%, 46%, 1),
+                'circle-2': hsla(241, 72%, 46%, 0),
         ),
-  // Tertiary Color
-        tertiary-color: (
-                'star-dust': #f9f3dd,
-                'crackled': #f2e7d1,
-                'neon-spring': #3ffd6a,
-                'iris-royale': #591b98,
-                'fading-horizon': #442266,
-                'election-night': #110320,
+        neutral-colors: (
+                'pale-blue': hsl(221, 100%, 96%),
+                'light-lavender': hsl(241, 100%, 89%),
+                'dark-gray-blue-transparent': hsla(224, 30%, 27%, 0.50),
+                'dark-gray-blue': hsl(224, 30%, 27%),
         ),
-  // Text Color
-        'text': #4d4f62,
   // Other
-        'background': #fafafa,
-        'white': #ffffff,
-        'black': #000000,
+        'background': hsl(0, 0%, 100%),
+        'box-shadow': hsla(234, 85%, 45%, 0.1),
+        'white': hsl(0, 0%, 100%),
+        'black': hsl(0, 0%, 0%),
 );
